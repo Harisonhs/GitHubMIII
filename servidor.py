@@ -14,10 +14,14 @@ def username():
             <h1>Título h1</h1>
             <p>Esta página é para ...</p>
             <p>Novo parágrafo</p>
+            <a href="sobre">sobre</a>
             """
 
+@app.route("/sobre")
 def f2():
-    pass
+    return """
+            <p>Esta página é sobre a demonstração do Flask</p>
+            """
 
 if __name__ == "__main__":
     app.run(port=5000)
